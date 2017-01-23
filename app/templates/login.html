@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<div id=loginBlock>
+		<h3>Login here with your admin credentials</h3>
+		<form action="" method="post" id="loginForm">
+			{{ login_form.hidden_tag() }}
+			{{ login_form.username(placeholder="Username") }}
+			{{ login_form.password(placeholder="Password") }}
+			<input type="submit" value="Login">
+		</form>
+	</div>
+{% endblock %}

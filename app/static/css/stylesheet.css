@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	background-image: url("../images/background.png");
+	background-repeat: repeat;
+	font-family: 'Raleway', sans-serif;	
+}
+
+h1 {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 600;
+	font-size: 4.8em;
+	margin-left: 0;
+	margin-top: .4em;
+	color: #0061aa;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #b71c1c;
+}
+
+a:hover {
+	color: #ef5350;
+}
+
+li {
+	text-align: center;
+	list-style: none;
+	margin-top: 1em;
+	margin-bottom: -2em;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+/* ========================================================================= */
+/* Body Styling */
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+}
+
+.contentWrapper {
+	width: 90%;
+	margin: 0 5%;
+}
+
+#banner {
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	height: 6em;
+	top: 0;
+}
+
+#header img {
+	position: absolute;
+	height: 6em;
+	z-index: -1
+}
+
+/* ========================================================================= */
+/* Player page styling */
+
+#playerInfo {
+	width: 35%;
+}
+
+#careerAverages {
+	width: 65%;
+}
+
+.playerSummary {
+	margin-top: 1em;
+	float: left;
+}
+
+#careerHeader {
+	width: 20em;
+	text-align: right;
+}
+
+#careerHeader h3 {
+	padding-right: 1em;
+	//color: #0061aa;
+}
+
+.careerStats {
+	width: calc(100% - 20em);
+	width: -moz-calc(100% - 20em);
+	width: -webkit-calc(100% - 20em);
+	width: -o-calc(100% - 20em);
+	float: left;
+}
+
+.statsTray {
+	min-width: 20em;
+	max-width: 40em;
+	display: table;
+}
+
+.statsTray div {
+	float: left;
+	width: calc(40% / 3);
+	padding-right: 20%;
+	text-align: left;
+}
+
+.statsTray div h2 {
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+.statsTray div p {
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #0061aa;
+}
+
+#statsPadding {
+	float: left;
+	width: 100%;
+	height: 2em;
+}
+
+.statsByTeamWrapper {
+	display: inline;
+	background: blue;
+}
+
+.statsByTeam {
+	width: calc(65% - 20em);
+	width: -moz-calc(65% - 20em);
+	width: -webkit-calc(65% - 20em);
+	width: -o-calc(65% - 20em);
+	float: left;
+	padding-bottom: 2em;
+}
+
+.statsByTeam .statsTray {
+	width: 100%;
+}
+
+.statsByTeam:nth-child(odd) {
+	margin-right: calc(100% - 2*(65% - 20em));
+	margin-right: -moz-calc(100% - 2*(65% - 20em));
+	margin-right: -webkit-calc(100% - 2*(65% - 20em));
+	margin-right: -o-calc(100% - 2*(65% - 20em));
+}
+
+/* ========================================================================= */
+/* Team page styling */
+
+.playerTray {
+	width: 80%;
+	height: 5.5em;
+}
+
+.playerTray div {
+	float: left;
+	width: calc(100% / 3);
+	text-align: left;
+}
+
+.playerTray div p {
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #0061aa;
+}
+
+/* ========================================================================= */
+/* Login/Admin page styling */
+
+#loginBlock {
+	text-align: center;
+}
+
+#addForm {
+	margin-top: 4em;
+}
+
+/* ========================================================================= */
+/* Form Styling */
+
+form {
+	width: 25%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	-webkit-appearance: none;
+}
+
+input {
+	border-radius: .1em;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+input[type=text], input[type=password] {
+	font-color: black;
+	min-width: 5em;
+	padding-left: 10px;
+	//background-color: rgba(0, 0, 0, 0.2);
+	background-color: white;
+	//border: 1px solid black;
+}
+
+input[type=submit] {
+	height: 1.8em;
+	display: table-cell;
+	box-shadow: none;
+	background-color: #aaa;
+	font-weight: 600
+}
+
+input[type=submit]:hover {
+	background-color: #e53935;
+}
+
+#queryForm {
+	min-width: 16em;
+	height: 2.4em;
+	padding-top: 2em;
+}
+
+#queryForm input {
+	height: 100%;
+}
+
+#queryForm span {
+	height: 2.4em;
+	display: block;
+	overflow: hidden;
+	padding-right: 3%;
+}
+
+#queryForm input[type=text] {
+	width: 100%;
+}
+
+#queryForm input[type=submit] {
+	width: 2.8em;
+	float: right;
+	margin-left: 0;
+} 
+
+/* ========================================================================= */
+/* Login page styling */
+
+#loginBlock {
+	margin-top: 4em;
+}
+
+#loginForm {
+	width: 12em;
+	margin-top: 2em;
+}
+
+#loginForm input {
+	float: left;
+	margin: 0 0 0.5em 0;
+}
+
+#loginForm input[type=text], input[type=password] {
+	height: 2em;
+	width: 10em;
+}
+
+#loginForm input[type=submit] {
+	width: 3.5em;
+}
+
+/* ========================================================================= */
+/* Admin page styling */
+
+.adminForm {
+	margin-top: 1em;
+}
+
+.adminForm input[type=text] {
+	height: 2em;
+	width: 14em;
+}
+
+.adminForm input[type=submit] {
+	height: 2em;
+	width: 4em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0, 0) inset;
+}
+
+.flashedMessages {
+	text-align: center;
+}
+
+.footer, .push {
+	height: 2em;
+	clear: both;
+}
+
+.footer p {
+	text-align: right;
+	margin-right: 2em;
+	font-size: .85em;
+}

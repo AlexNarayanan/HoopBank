@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Hoop Bank | Statistics for your favorite players and teams</title>
+		<link rel="stylesheet" href="/static/css/stylesheet.css">
+		<link rel="icon" href="/static/images/favicon.png" type="image/x-icon"/>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Kanit:600' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header">
+				<img id="banner" src="/static/images/banner.jpg" alt="Banner">
+			</div>
+			{% block content %}{% endblock %}
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<ul class="flashedMessages">
+					{% for message in messages %}
+						<li>{{ message }}</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
+			{% endwith %}
+			<div class="push"></div>
+		</div>
+		<div class="footer">
+			<p>Brought to you by Orson Cheng & Alex Narayanan</p>
+		</div>
+	</body>
+</html>

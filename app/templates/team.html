@@ -1,0 +1,20 @@
+{% extends "base_query_form.html" %}
+{% block content %}
+	<h1>{{team_name}}</h1>
+	{% for pid, pname, position, number in roster %}
+		<div class="playerTray">
+			<div>
+				<h3><a href="{{ url_for("showPlayer", player_name=pname.replace(" ", ""), player_id=pid) }}">{{pname}}</a></h3>
+				<p>NAME</p>
+			</div>
+			<div>
+				<h3>{{number}}</h3>
+				<p>NO.</p>
+			</div>
+			<div>
+				<h3>{{position}}</h3>
+				<p>POS</p>
+			</div>
+		</div>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+	<form action="" method="post" class="adminForm" id="addForm">
+		{{ add_form.hidden_tag() }}
+		{{ add_form.add(placeholder="Player to add") }}
+		<input type="submit" value="Add">
+	</form>
+	<form action="" method="post" class="adminForm" id="updateForm">
+		{{ update_form.hidden_tag() }}
+		{{ update_form.update(placeholder="Player to update") }}
+		<input type="submit" value="Update">
+	</form>		
+	<form action="" method="post" class="adminForm" id="deleteForm">
+		{{ delete_form.hidden_tag() }}
+		{{ delete_form.delete(placeholder="Player to delete") }}
+		<input type="submit" value="Delete">
+	</form>			
+{% endblock %}

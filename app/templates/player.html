@@ -1,0 +1,52 @@
+{% extends "base_query_form.html" %}
+{% block content %}
+	<h1>{{player_info[1]}}</h1>
+	<div id="playerInfo" class="playerSummary">
+		<h3>#{{player_info[3]}} | {{player_info[2]}}</h3>
+		<h3><a href="{{ url_for("showTeam", team_name=player_info[5].replace(" ", ""), team_id=player_info[4]) }}">{{player_info[5]}}</a></h3>
+	</div>
+	<div id="careerAverages" class="playerSummary">
+		<div id="careerHeader" class="careerStats">
+			<h3>Career Averages</h3>
+		</div>
+		<div class="statsTray careerStats">
+			<div>
+				<h2>{{career_statistics[0]}}</h2>
+				<p>PTS</p>
+			</div>
+			<div>
+				<h2>{{career_statistics[1]}}</h2>
+				<p>REB</p>
+			</div>
+			<div>
+				<h2>{{career_statistics[2]}}</h2>
+				<p>AST</p>
+			</div>
+		</div>
+	</div>
+	<div id=statsPadding></div>
+	<div id="statsByTeamWrapper">
+	{% for team in statistics_by_team %}
+		<div class="statsByTeam">
+			<div id="statsByTeamSummary">
+				<p>Averages for</p>
+				<h4><a href="{{ url_for("showTeam", team_name=team[1].replace(" ", ""), team_id=team[0]) }}">{{team[1]}}</a></h4>
+			</div>
+			<div class="statsTray">
+				<div>
+					<h2>{{team[2]}}</h2>
+					<p>PTS</p>
+				</div>
+				<div>
+					<h2>{{team[3]}}</h2>
+					<p>REB</p>
+				</div>
+				<div>
+					<h2>{{team[4]}}</h2>
+					<p>AST</p>
+				</div>
+			</div>	
+		</div>
+	{% endfor %}
+	</div>
+{% endblock %}
